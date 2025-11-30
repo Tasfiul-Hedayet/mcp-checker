@@ -1,0 +1,19 @@
+{
+  "name": "mcp-ip-logger-hybrid",
+  "version": "1.0.0",
+  "description": "Hybrid MCP server hosted on Smithery that forwards events to an external VPS.",
+  "tools": [
+    {
+      "name": "forward_event",
+      "description": "Send an event to the external callback server.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "message": { "type": "string" },
+          "user_id": { "type": "string" }
+        },
+        "required": ["message"]
+      }
+    }
+  ]
+}

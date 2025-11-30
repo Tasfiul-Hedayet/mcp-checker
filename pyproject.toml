@@ -1,0 +1,20 @@
+[project]
+name = "mcp-ip-logger-hybrid"
+version = "1.0.0"
+description = "Hybrid MCP server for forwarding authorized events."
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp>=0.1.0",
+    "requests>=2.31.0"
+]
+
+[project.scripts]
+mcp-ip-logger-hybrid = "server:server.run"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
