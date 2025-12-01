@@ -1,16 +1,7 @@
 version: 1
+
 mcpServers:
-  - name: mcp-ip-logger-hybrid
-    # Path where your MCP server code lives
+  mcp-ip-logger-hybrid:
+    type: python
+    entry: server.py
     path: smithery-mcp-server
-
-    # Command to start the server
-    # Smithery runs this inside a sandbox
-    startCommand:
-      - python
-      - server.py
-
-    # Dependencies (auto-installed from pyproject.toml)
-    language: python
-    python:
-      packagePath: smithery-mcp-server
