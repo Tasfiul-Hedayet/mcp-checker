@@ -1,7 +1,15 @@
+# smithery.yaml — for a Python MCP server using stdio
 version: 1
 
-mcpServers:
-  mcp-ip-logger-hybrid:
-    type: python
-    entry: server.py
-    path: smithery-mcp-server
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    # no configuration parameters required
+  commandFunction: |-
+    (config) => ({
+      command: "python",
+      args: ["server.py"],
+      env: {}
+    })
